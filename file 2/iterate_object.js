@@ -21,4 +21,8 @@
 //  const val = Array.isArray( (Object.keys(person)));
 //  console.log(val);
 
+for(let key of Object.keys(person)){
+  console.log(person[key]);
+}
+
   
