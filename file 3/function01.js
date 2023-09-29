@@ -73,3 +73,13 @@ function findTarget(array, target){
 
 
 
+    // function expression
+
+
+    const happy = function(){
+        console.log("happy happy ");
+    }
+    happy();
+
+
+
