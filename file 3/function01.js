@@ -58,18 +58,18 @@ function singasong (){
 // output:index of target if target  present in Array
 // [1,5,9,27,6],9
 
-function findTarget(array, target){
-    for(let i = 0;i<array.lengh; i++){
-        if(array[i]===target){
-            return i;
-        }
-    }
-       return -1;
-}
+// function findTarget(array, target){
+//     for(let i = 0;i<array.lengh; i++){
+//         if(array[i]===target){
+//             return i;
+//         }
+//     }
+//        return -1;
+// }
  
-    const myarray =[1,3,8,90];
-    const ans =findTarget(myarray,8)
-    console.log(ans);
+//     const myarray =[1,3,8,90];
+//     const ans =findTarget(myarray,8)
+//     console.log(ans);
 
 
 
