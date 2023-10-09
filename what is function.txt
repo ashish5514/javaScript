@@ -1,0 +1,9 @@
+
+(1)  what is function perameter ?
+  Ans:- je function nu name hoi tene perameter ...
+(2)  what is argunment ?
+  Ans :- je function behave changed kare jem ke ..
+       
+   exampal :-  function (Number, Index   <`'this is a parameter'`>){
+                 consol.log(Number, index) <`'this is a argument'`>;       
+                 }
