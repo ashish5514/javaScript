@@ -8,3 +8,13 @@
 
 //    myFunc(3,4,5,6,7,8,9);
 
+function addall(...numbers){
+    let total = 0;
+    for(let number of numbers){
+        total = total + number;
+    }
+    return total;
+}
+
+const ans = addall(4,5,4,2,10);
+console.log(ans);
