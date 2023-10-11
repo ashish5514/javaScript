@@ -1,0 +1,9 @@
+  what is method?
+Ans :- function ne object ni andar lakhva thi te method thai che.
+
+
+    function(){
+        console.log(`person name is ${this.firstName} and person age is ${this. age}`);
+    } 
+
+      aa function ma this evu object che. je function ne call kare
