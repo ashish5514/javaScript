@@ -20,4 +20,4 @@ const person3 = {
     age:undefined,
     about: personInfo
 } 
-person2.about();
+person2.about ();

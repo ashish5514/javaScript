@@ -7,3 +7,7 @@ Ans :- function ne object ni andar lakhva thi te method thai che.
     } 
 
       aa function ma this evu object che. je function ne call kare
+
+
+
+ 
