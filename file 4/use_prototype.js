@@ -49,7 +49,7 @@
 
   function creatUser (firstName, lastName, email, age, address){
     
-    const user = Object.create(userMethod);
+    const user = Object.create(creatUser.prototype);
     user.firstName=firstName;
     user.lastName=lastName;
     user.email=email;
