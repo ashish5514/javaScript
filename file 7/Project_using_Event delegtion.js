@@ -25,6 +25,21 @@ todoForm.addEventListener("submit",(e)=>{
     newLi.innerHTML = newLiInnerhtml;
     todoList.append(newLi);
 
-    console.log(newLi);
+    // console.log(newLi);
     todoInput.value="";
 });
+
+todoList.addEventListener("click", (e) => {
+  // console.log(e.target.classList)
+  if (e.target.classList.contains("remove")){
+    // console.log("you want remove something ??");
+    const targetedLI = e.target.parentNode.parentNode;
+    targetedLI.remove();
+  }
+  if (e.target.classList.contains("done")){
+    // console.log("great !!!!!");
+    const liSpan = e.target.parentNode.previousElementSibling;
+    console.log(liSpan);
+    liSpan.style.textDecoration = "Line-through";
+  }
+})
