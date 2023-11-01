@@ -22,7 +22,7 @@ const intervalId =  setInterval(()=> {
 
 button.addEventListener("click",()=>{
  clearInterval(intervalId);
- button.
+ button.textContent=body.style.background
 })
 
 console.log(intervalId);
