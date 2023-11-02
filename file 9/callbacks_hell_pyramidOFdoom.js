@@ -54,3 +54,58 @@ const heading7 = document.querySelector(".heading7");
     //         },1000)
     //     },1000)
     // },1000)
+
+
+    // function changeText(element, text, color, time, onsuccessCllback){
+    //     setTimeout(() => {
+    //         if(element){
+    //             element.textContent =text;
+    //             element.style.color =color; 
+    //             if(onsuccessCllback){
+    //                 onsuccessCllback();
+    //             }
+    //         }
+    //         else{
+    //             console.log("your element does not exist");
+    //         }
+    //     }, time);
+    // }
+    // changeText(heading1,"one","violet", 2000,()=>(
+    //     changeText(heading2,"two","green", 1000)
+    // ));
+
+    // pyaramid ofdoom 
+
+    function changeText(element, text, color, time, onsuccessCllback, onFailureCallback){
+        setTimeout(() => {
+            if(element){
+                element.textContent =text;
+                element.style.color =color; 
+                if(onsuccessCllback){
+                    onsuccessCllback();
+                }
+            }
+            else{
+                if(onFailureCallback){
+                    onFailureCallback();
+                }
+            }
+        }, time);
+    }
+
+
+    changeText(heading1, "one","green",2000,()=>{
+        changeText(heading2, "two","violet",1000,()=>{
+            changeText(heading3, "three","red",1000,()=>{
+                changeText(heading4, "four","yellow",1000,()=>{
+                    changeText(heading5, "five","pink",1000,()=>{
+                        changeText(heading6, "six","blue",1000,()=>{
+                            changeText(heading7, "seaven","brown",1000,()=>{
+                                
+                            },()=>{console.log("heading7 dose not exist");})
+                        },()=>{console.log("heading6 dose not exist");})
+                    },()=>{console.log("heading5 dose not exist");})
+                },()=>{console.log("heading4 dose not exist");})
+            },()=>{console.log("heading3 dose not exist");})
+        },()=>{console.log("heading2 dose not exist");})
+    },()=>{console.log("heading1 dose not exist");})
